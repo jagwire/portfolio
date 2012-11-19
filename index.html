@@ -1,0 +1,289 @@
+<html>
+	<head>
+		<title> Portofolio - Ryan Babiuch </title>
+		
+
+		
+		
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+    	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    	<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+		<script>
+			$(function() {
+				$("#tabs-min").tabs();
+			});
+		
+		</script>
+		
+		<style>
+
+			body {
+				background-image: url("images/blue_aura.jpg");
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-position: fixed;
+			}
+	
+			table {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			th {
+				background: rgba(102, 139, 139, 0.5);
+				height: 10%;
+				border-top-right-radius:5px;
+				border-top-left-radius:5px;
+				margin-top: -1px;
+			}
+			tr.first {
+				background: rgba(102, 139, 139, 0.5);
+				height: 10px;
+			}
+			table.content {
+				background: rgba(102, 139, 139, 0.2);
+				height: 75%;
+				width: 600px;
+				border-radius:5px;
+				margin-left: 20px;
+				padding: -1px;
+				border-spacing:0;
+			}
+			
+			td {
+				text-align: center;
+				//background: rgba(102, 139, 139, 0.5);
+			}
+			#portfolio-home {
+				border-radius: 5px;
+				background: rgba(102, 139, 139, 0.5);
+				width: 75%;
+			}
+			.portfolio-body {
+				border-radius: 5px;
+				background: rgba(102, 139, 139. 0.5);
+				width: 100%;
+			}
+			
+			#tabs-min {
+				background: transparent;
+				border: none;
+
+			}
+			
+			#tabs-min .ui-widget-header {
+				background: transparent;
+				border: none;
+				border-bottom: 1px solid #c0c0c0;
+				-moz-border-radius: 0px;
+				-webkit-border-radius: 0px;
+				border-radius: 0px;
+			}
+			
+			#tabs-min .ui-state-default {
+				background: transparent;
+				border: none;
+			}
+			
+			#tabs-min .ui-state-active {
+				background: transparent url(images/uiTabsArrow.png) no-repeat bottom center;
+				border: none;
+
+			}
+
+			#tabs-min .ui-state-default a {
+				//color: rgba(102, 139, 139, 1);// #c0c0c0;
+				//-webkit-text-stroke: 1px black;
+				color: #8C7853;
+
+			}
+			
+			#tabs-min .ui-state-active a {
+				color: rgba(0, 0, 0, 1); //#459E00;
+			}
+			
+			#profile-pic {
+				float: right;
+			}
+			
+			#name-header {
+				color: #8C7853;
+			}
+			
+			p.content {
+
+				text-indent: 50 px;
+				border: 50px;
+				color: black;
+				 margin: 5px;
+			}
+			.section-header {
+				border-bottom: 1px solid #8C7853;
+				color: #8C7853;
+			}
+			
+			.footnote {
+				color: #8C7853;
+			}
+					
+		</style>
+	</head>
+	
+	<body bgproperties="fixed">
+	
+		
+		<div id="name-head">
+			<h1 style="float: left; color:#8C7853">Ryan Babiuch</h1> 
+			<div style="float: right; color:#8C7853">
+				<h2 align="center" >University of Missouri <br /> Educational Technology - LSDD</h2>		
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
+
+	
+		<br/>
+		<br/>
+		<br/>
+		<div id="tabs-min">
+			<ul>
+				<li><a href="#tabs-min-1">Home</a></li>
+				<li><a href="#tabs-min-2">Program Of Study</a></li>
+				<li><a href="#tabs-min-3">Competencies</a></li>
+				<li><a href="#tabs-min-4">Resume</a></li>
+				<li><a href="#tabs-min-5">Reflection</a></li>
+			</ul>
+			
+			<div id="tabs-min-1">
+				<div id="profile-pic">
+					<img style="-webkit-border-radius: 5px;"src="images/Ryan.png"/>
+				</div>
+				
+				<h1>PORTFOLIO</h1>
+				<div id="portfolio-home" style="color: #8C7853; padding: 5px">
+					
+					
+					<p class="content">Since I was very young, I've loved working in, around, and with computers.
+					 Through middle school, I had a knack for persuading my teachers to spend my study time in the 
+					 computer lab. In high school I took advantage of the opportunity to take the computer classes. 
+					 In college, I majored in Computer Science and Information Technology. I was disappointed, however,
+					 to realize that my degrees didn't teach me what I wanted to know. It wasn't until I began working
+					 In the School of Information Sciences and Learning Technologies (SISLT) that I found the opportunity
+					 I was looking for.</p>
+					 
+					 <p class="content" >SISLT opened doors that I had never fathomed.</p>
+				</div>
+			</div>
+			<div id="tabs-min-2">
+				<div class="portfolio-body">
+					<div style="float: right"><h1>Program of Study</h1></div>
+					<br /> <br /><br />
+					<table class="content">
+						<tr class="first">
+							<th>Course Number</th>
+							<th>Course Name</th>
+							<th>Credit Hours</th>
+							<th>Grade</th>
+							<th>Semester Taken</th>
+						</tr>
+						
+						<!-- begin courses -->
+						<tr>
+							<td>9474</td>
+							<td>Needs Assessment</td>
+							<td>3</td>
+							<td>B</td>
+							<td>Fall 2010</td>
+						</tr>
+						
+						<tr>
+							<td>9457</td>
+							<td>Computer Supported Cooperative Work</td>
+							<td>3</td>
+							<td>A</td>
+							<td>Fall 2010</td>
+						</tr>
+						
+						<tr>
+							<td>9085</td>
+							<td>Problems in ISLT</td>
+							<td>3</td>
+							<td>A</td>
+							<td>Fall 2010</td>
+						</tr>
+						
+						<tr>
+							<td>9455</td>
+							<td>Formative and Summative Evaluation</td>
+							<td>3</td>
+							<td>A</td>
+							<td>Spring 2011</td>
+						</tr>
+						
+						<tr>
+							<td>9471</td>
+							<td>Instructional Systems Design</td>
+							<td>3</td>
+							<td>A</td>							
+							<td>Spring 2011</td>
+						</tr>
+						
+						<tr>
+							<td>9085</td>
+							<td>Problems in ISLT</td>
+							<td>3</td>
+							<td>A</td>							
+							<td>Spring 2011</td>
+						</tr>
+						
+						<tr>
+							<td>9471</td>
+							<td>Interface Design</td>
+							<td>3</td>
+							<td>A-</td>							
+							<td>Fall 2011</td>
+						</tr>
+						
+						<tr>
+							<td>9468</td>
+							<td>Learning & Task Analysis</td>
+							<td>3</td>
+							<td>A</td>							
+							<td>Fall 2011</td>
+						</tr>
+						
+						<tr>
+							<td>9085</td>
+							<td>Problems in ISLT</td>
+							<td>6</td>
+							<td>A<sup>*</sup></td>
+							<td>Fall 2012</td>
+						</tr>
+						
+						<!-- end courses -->
+						
+					</table>
+				</div>
+				<h5 class="footnote">*Anticipated grade at the time of portfolio compilation.</h5>
+			</div>
+			
+			<div id="tabs-min-3">
+				<div class="portfolio-body">
+					<h2 class="section-header">Needs Assessment</h2>				
+					
+					<h2 class="section-header">Formative/Summative Evaluation</h2>
+					
+					<h2 class="section-header">Learning/Task Anaylsis</h2>
+					
+					<h2 class="section-header">Interface Design</h2>
+						
+				</div>
+			</div>
+			<div id="tabs-min-4">F</div>
+			<div id="tabs-min-5">J</div>
+			
+			
+		</div>
+	
+	</body>
+</html>
