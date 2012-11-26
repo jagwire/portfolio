@@ -11,7 +11,14 @@
 		<script>
 			$(function() {
 				$("#tabs-min").tabs();
+				
+				$("#accordion").accordion({
+					collapsed: true, 
+					collapsible: true,
+					heightstyle: "auto",
+				});
 			});
+			
 		
 		</script>
 		
@@ -78,6 +85,25 @@
 				-webkit-border-radius: 0px;
 				border-radius: 0px;
 			}
+		
+			#accordion-wrapper .ui-accordion {			
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;				
+				background: rgba(102, 139, 139, 0.7);
+				height: 100%;
+				border: 1px;
+				border-color: rgba(1, 1, 1, 1);
+
+
+			}
+	
+			.ui-accordion-content {
+				background: rgba(255, 255, 255, 0.1);
+				border: 0px;
+				height: 50%;
+
+			}
+
 			
 			#tabs-min .ui-state-default {
 				background: transparent;
@@ -87,7 +113,6 @@
 			#tabs-min .ui-state-active {
 				background: transparent url(images/uiTabsArrow.png) no-repeat bottom center;
 				border: none;
-
 			}
 
 			#tabs-min .ui-state-default a {
@@ -159,6 +184,12 @@
 			.resume-left-body {
 				margin-left: 100px;
 				margin-right: 100px;
+			}
+			
+			.nested-section {
+				margin-left: 100px;
+				margin-right: 100px;
+				
 			}
 			
 			.first-line {
@@ -324,14 +355,149 @@
 			<!-- Competencies -->
 			<div id="tabs-min-3">
 				<div id="portfolio-home">
-					<h2 class="section-header">Needs Assessment</h2>				
+					<!--<div id="accordion-wrapper" class="accordion-wrapper nested-section" >
+					<br />
+					<br />
+						<div id="accordion" style="height: 100%">
+							<h6>Needs Assessment</h6>
+							<div>
+								A needs assessment for my current workplace,
+						a research and development project at the University of Missouri.
+							</div>
+							
+							<h2 class="section-header">Formative/Summative Evaluation</h2>
+							<div></div>
+							<h2 class="section-header">Learning/Task Anaylsis</h2>
+							<div></div>
+							<h2 class="section-header">Interface Design</h2>
+							<div></div>
+						</div>
+					</div>-->
 					
-					<h2 class="section-header">Formative/Summative Evaluation</h2>
-					
-					<h2 class="section-header">Learning/Task Anaylsis</h2>
-					
-					<h2 class="section-header">Interface Design</h2>
+					<h4 class="resume-left-section">Conducting A Needs Assessment</h4>
+					<p class="resume-left-body" style="font-size: small">This competency focuses on the ability to 
+						determine what and where the optimal, practical, and real goals of
+						an entity lie. Specifically, we look for the current situation and
+						the best situation and find the difference between the two in many
+						different areas of the entity.
 						
+						<div id="portfolio-home" class="nested-section">
+							<p style="font-size: small">
+								<b>Summary:</b>
+								<p style="font-size: small">A needs assessment was performed on the iSocial project's
+								work environment in 118 London Hall on the University of Missouri campus. Various processes
+								were carried out coming to the conclusion that not only was it highly probable that 
+								cultural divides existed, but there was also likely a deviation between expectations of superiors and employees.
+								Further investigation was recommended to identify areas where communication barriers
+								could existed and could be broken.</p>
+								
+								<b style="font-size: small">Techniques Used:</b>								
+								<p style="font-size: small">To gather data, interviews, observations, and surveys were deployed with random staff
+								members of the iSocial project. 
+								The instruments were designed to get a sense of the optimal and actual realities of the various pieces of the performance period.
+								Upon completion of the execution, the data was analyzed for common trends, subtle comments, and identifying
+								artifacts that might suggest that aspects of the performance pyramid were misaligned or did not cohere.
+								</p>
+								
+								<b style="font-size: small">Conclusion</b>
+								<p style="font-size: small">It was found that most employees had different ideas of what was expected
+								of them than the supervisors did. Further, a clear cultural divide was shown that kept leadership from being
+								able to provide meaningful feedback to employees. Lastly, it was recommended that processes, expectations, and training
+								procedures be formally written down and discussed, financial motivations should be investigated and further investigation
+								be performed to assess cultural divisions and their impact on the workplace.
+								<br /><br />
+								<a href="needs.pdf">iSocial Needs Assessment</a>
+								<br /><br />
+								<b style="font-size: small">Reflection</b>
+								<p style="font-size: small">I found the process as a whole to be highly informative and engaging. That said, it was slightly unnerving
+								to perform such an assessment on one's own workplace. In the future, I think I would try and schedule the data gathering instruments
+								in a more organized manner to make for more efficient schedules. For example, interviews and observations could be performed on
+								the same day with surveys handed out near the end of the day to be submitted the next morning so each person has ample time to think
+								through their answers and provide better data.</p>
+								<p style="font-size: small">Generally speaking, these techniques provided a great context for me to really analyze an organization.
+								If future management positions arise, I will definitely use these tools again to run an organization efficiently. Further, I'm impressed
+								by how scalable this process is. It doesn't necessarily have to only be used in the context of personal performance but also in gauging
+								performance of software or mechanical systems. I find this to be an incredibly powerful idea.</p>
+								<br /><br />
+							</p>
+						</div>
+					</p>
+					
+					<h4 class="resume-left-section">Conducting Evaluations</h4>
+					<p class="resume-left-body" style="font-size:small"> This competency focuses on the ability to
+					measure how one's endeavors are accomplishing and have accomplished its goals.
+						<div id="portfolio-home" class="nested-section">
+							<p style="font-size:small">
+								<b>Summary:</b>
+							</p>
+							
+							<p style="font-size:small">
+								<b>Techniques Used:</b>
+							</p>
+							
+							<p style="font-size:small">
+								<b>Conclusion</b>
+							</p>
+							
+							<p style="font-size:small">
+								<b>Reflection</b>
+							</p>
+						</div>
+					</p>
+					
+					
+					<h4 class="resume-left-section">Learning/Task Analysis</h4>
+					<p class="resume-left-body" style="font-size:small">This competency focuses on the breakdown of
+					tasks and learning into their individual pieces. Specifically, enumerating various aspects of a task be it, the procedure, the necessary
+					subject matter, pre-requisite knowledge, and organizing the information once it's compiled.
+						<div id="portfolio-home" class="nested-section">
+							<p style="font-size:small">
+								<b>Summary:</b>
+							</p>
+							
+							<p style="font-size:small">
+								<b>Techniques Used:</b>
+							</p>
+							
+							<p style="font-size:small">
+								<b>Conclusion</b>
+							</p>
+							
+							<p style="font-size:small">
+								<b>Reflection</b>
+							</p>
+						</div>
+					</p>
+					
+					
+						
+					<h4 class="resume-left-section">Designing Interfaces</h4>
+					<p class="resume-left-body" style="font-size:small">This competency focuses on conceptualizing and creating 
+					human accessible systems through an iterative process of gathering requirements, assessing needs, determining 
+					necessary pre-requisite knowledge, development, and testing.
+						<div id="portfolio-home" class="nested-section">
+							<p style="font-size:small">
+								<b>Summary:</b>
+							</p>
+							
+							<p style="font-size:small">
+								<b>Techniques Used:</b>
+							</p>
+							
+							<p style="font-size:small">
+								<b>Conclusion</b>
+							</p>
+							
+							<p style="font-size:small">
+								<b>Reflection</b>
+							</p>
+						</div>					
+					</p>
+				
+				
+					<br />
+					<br />
+
 				</div>
 			</div>
 			
@@ -480,10 +646,47 @@
 			</div>
 			
 			<!-- Reflection -->
-			<div id="tabs-min-5">J</div>
-			
-			
+			<div id="tabs-min-5">
+				<div id="portfolio-home">
+					<h1 align="center">Reflection</h1>
+					<br/>
+					<br/>
+					
+					<h4 class="resume-left-section">Background</h4>
+					<p class="resume-left-body" style="font-size:small">In the Fall of 2005, I started my undergraduate career at the University of Missouri's Computer Science department within the College of Engineering. Since I was very young, I had been immersed in computer use and electronics, so I felt the Computer Science curriculum would be a nice fit. Upon attendance, I decided that the department's Information Technology department would make a great supplement to the Computer Science curricula and picked Information Technology as a second major. In late 2007, I found a job on the University's campus working in computer graphics, closely related to my love of video games. Upon graduation however, I felt a bit let down. I didn't get to learn how to do things others had been doing with today's technology. Instead, I learned archaic and outdated ideas and technologies, leaving colossal gaps between where I was and where I felt I had needed to be in order to be competitive within the seemingly aggressive job market.</p>
+					<p class="resume-left-body" style="font-size:small">While working, my supervisor at the time had mentioned the Educational Technology program within the School of Information Sciences and Learning Technologies. He had indicated that such a degree could open many new doors and offer fresh opportunities. I decided to take advantage of such an opportunity.</p>
+					
+					
+					<h4 class="resume-left-section">The Beginning</h4>
+					<p class="resume-left-body" style="font-size:small">In the fall of 2010, I was enrolled in the Learning Systems Design and Development track of the Educational Technology masters program within the School of Information Sciences and Learning Technologies at the University of Missouri. I was pleased to find that the program was largely delivered online and that I could work at my own pace. I was also encouraged that the material seemed abstract enough to be applied to nearly any discipline, yet specific enough to be coherently useful.  Perhaps the best part was that the material aligned nicely with my professional work and an attractive synergy began to develop.</p>
+				
+					<h4 class="resume-left-section">Assessing Needs</h4>
+					<p class="resume-left-body" style="font-size:small">The first class I took was Needs Assessment with Dr. John Wedman. Dr. Wedman introduced the idea of a "performance need", that is to say, the difference between how something is currently and how it should be in a best-case scenario. This idea largely went viral in my head and I began mentally assessing needs everywhere. Anywhere from parking lot arrangements and prior course schedules to checkout lines at Wal-Mart and department stores, assessments were practiced in my head during day-to-day activities.</p>
+					
+					<p class="resume-left-body" style="font-size: small">Dr. Wedman taught us to utilize a construct he developed, named the Performance Pyramid. The Performance Pyramid taught us to think of environments as compartments of various categories in alignment. If any of these compartments were misaligned with the overall vision or goals of the environment, there was likely a need to be exposed. It didn't stop here, however. Dr. Wedman also taught us that environments should undergo several iterations of monitoring, from many different angles for optimum analysis and benefit of the environment. With this in mind, I added a great new tool to my repertoire, Needs Assessment. </p>
+					
+					<h4 class="resume-left-section">Collaboration and Cooperation</h4>
+					<p class="resume-left-body" style="font-size:small">Another of the early classes I enrolled in was Designing for Computer Supported Cooperative Work taught by Dr. Jim Laffey. Dr. Laffey introduced us to the world of cooperation and collaboration. The idea that many people could come together to produce an end result of higher value than could be done by any one of themselves was the focus of this class. Specifically, designing tools to facilitate such an idea's execution. As part of the course, we test-drove and critiqued collaborative software, critiqued each other's collaborations, designed our own tools, tested our tools' usability, and critiqued each other's testing methods. I think the biggest lesson learned was that the design, development, and testing of these tools is always an iterative process. There is always more to be done, more data to be collected and analyzed, and improvements to be made, tailored, and delivered. </p>
+					
+					<h4 class="resume-left-section">How are you doing? How did you do?</h4>
+					<p class="resume-left-body" style="font-size:small">After the first semester, I was feeling pretty good about my decision of joining the Educational Technology program. I went on to take Formative and Summative Evaluation taught by Dr. Julie Caplow. While this class I found to be far less interesting than those taken prior, it wasn't until later that I realized I had been hoodwinked and the class as a whole had a much greater meaning.</p>
+					<p class="resume-left-body" style="font-size:small">The ideas of formative and summative evaluation and relatively simple, a formative evaluation answers the question, how is a particular something doing during it's deployment (and sometimes testing), and likewise a summative evaluation answers the question, how did that particular something do while attempting to accomplish its goal. The mechanics of such performance are equal in complexity: Determine questions you wish to answer as part of the evaluation, determine what instruments you wish to use as part of the evaluation, and create a matrix to map the questions to the instruments that will deliver their answers.</p>
+					<p class="resume-left-body" style="font-size:small">This was all well in good, and the material was delivered using group projects to run through the motions. Suffice to say, I was a bit disappointed in a couple of my group members, but as alluded to earlier, it wasn't until later upon some reflection that I saw the forest through the trees. I largely believe part of the curriculum of this master's program is teaching collaboration and learning together. That said, I'm not sure a teacher can lecture his or her students about the nuances of group work. You see, one must experience group work in order to realize that quite honestly, the inconvenient truth about collaboration and group work is that you have to collaborate and work as a group. I largely believe this cannot be taught from a textbook or delivered in lecture, but it must be experienced. Hats off to the professors within SISLT for their recognition of this fact. I'm a stronger collaborator due to this course.</p>
+					
+					<h4 class="resume-left-section">Synthesis</h4>
+					<p class="resume-left-body" style="font-size:small">About the same time as I was taking Formative and Summative Evaluation, I was also taking Designing Instructional Systems taught by Dr. Gail Fitzgerald. The interesting thing about this course was that it was delivered in a role-playing sort of way. The course material was structured in my favorite way: each new piece of the course is like a step in a staircase (or a rung in a ladder) , it builds upon the steps before it, similar to a pyramid. This course touched on nearly everything that had been taught prior and concurrently, but put it all together in such way to make the whole program very meaningful. Coincidentally  (or perhaps not), this class was taken concurrently with Formative and Summative Evaluation and also had group activities for the majority of the class. The activities involved participation in two separate groups: The first, a group learning the ropes of instructional systems design, and the second a group "licensed" by Dr. Fitzgerald to design an instructional system of their choosing. The first group in which I partook was a dream come true. Everyone did their fair share, provided great feedback, and cohered as a team. The second group—not so much. The second group while much smaller than the first, lacked a complete vision, and perhaps leadership resulting in a substandard end result. In the end, the mechanics I learned and lessons I discovered contributed greatly to my vision of the program and the intricacies of collaboration.</p>
+					
+					<h4 class="resume-left-section">Task Analysis and Interface Design</h4>
+					<p class="resume-left-body" style="font-size:small">After a summer off for work and reflection, I returned in the fall of 2011 to more coursework. Two design courses gave me extra practice in what I had learned the year prior. In Interface Design, taught by Dr. Joi Moore, I was able hone much of my skills learned in Dr. Laffey's class and perform better in the group project at the end thanks to the experience provided by Dr. Caplow's and Dr. Fitzgerald's courses. Great strides were learned in regards to designing usable systems.</p> 
+					<p class="resume-left-body" style="font-size:small">The second course was Learning and Task Analysis taught by Dr. David Jonnassen. This course caught me a bit by surprise.  The course exercised a lot of thought on topics once thought mundane.  I was interested, to learn that analyzing a particular task can be accomplished several different ways, and each way lends its own unique perspective. For example, a procedural analysis is what I largely think of when enumerating the steps in a task, but a prerequisite analysis informs what knowledge/task needs to be present in order for a task to be accomplished. While easily the most challenging course I took, this was one of the most enjoyable as there was no group work at the end to cause stress and anxiety.</p> 
+					
+					<h4 class="resume-left-section">Overall</h4>
+					<p class="resume-left-body" style="font-size:small">Overall, I'm extremely pleased with the results of my program. I've added many tools to my toolkit, experienced many life lessons, and seen several perspectives. Without this program I would be highly less marketable as a professional than I am today. There were still some gaps that left me wondering. I had expected a survey and analysis of various learning technologies. One specifically caught my eye shortly before I graduated with my degree in Computer Science: the Cornell note taking method. I was saddened that it had taken me the better part of five years to discover the note-taking method and I was unable to fully take advantage of it in my studies. Further, colleagues often alluded to paper and pencil being educational technology at its purest form, yet there was no formal mention of this in instruction. Despite this, I largely enjoyed and benefitted from the program and would likely enroll again if I had to do it over.</p>
+					
+					<br />
+					<br />
+				</div>
+			</div>
 		</div>
-	
 	</body>
 </html>
